@@ -1,0 +1,12 @@
+h1{
+  color:aquamarine;
+  text-shadow: black 0.5px 0 0.5px;
+}
+
+.purpose{
+  background-color: aquamarine;
+}
+
+a:hover{
+  text-decoration:none;
+}
