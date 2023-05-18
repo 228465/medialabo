@@ -46,6 +46,11 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log(data.name);
-console.log(data.main.temp_max);
-console.log(data.main.temp_min);
+let p1 = document.querySelector('td#name');
+p1.textContent = data.name;
+
+let p2 = document.querySelector('td#max');
+p2.textContent = data.main.temp_max;
+
+let p3 = document.querySelector('td#min');
+p3.textContent = data.main.temp_min;
