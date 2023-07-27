@@ -18,21 +18,27 @@ let h2 = document.querySelector('h2#ex42');
 let p = document.createElement('p');			
 p.textContent = '写真表と都市の緯度経度のページです';
 h2.insertAdjacentElement('afterend', p);
-p.style.emphasis='green';
+p.style.textEmphasis='sesame green';
 
 // 練習4-3 写真表作成プログラム
 let h3 = document.querySelector('div#phototable');
 let img = document.createElement('img');
 img.src = 'taro.png';
-h3.insertAdjacentElement('beforeend',img);
+let p1 = document.createElement('p');
+p1.insertAdjacentElement('beforeend',img);
+h3.insertAdjacentElement('beforeend',p1);
 
 let img2 = document.createElement('img');
 img2.src = 'jiro.png';
-h3.insertAdjacentElement('beforeend',img2)
+let p2 = document.createElement('p');
+p2.insertAdjacentElement('beforeend',img2);
+h3.insertAdjacentElement('beforeend',p2);
 
 let img3 = document.createElement('img');
 img3.src = 'hanako.png';
-h3.insertAdjacentElement('beforeend',img3)
+let p3 = document.createElement('p');
+p3.insertAdjacentElement('beforeend',img3);
+h3.insertAdjacentElement('beforeend',p3);
 
 // 練習4-4 箇条書き削除プログラム
 let list_element = document.getElementById("location");
