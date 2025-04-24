@@ -1,0 +1,28 @@
+body{
+  background-color:  #fff7d9;
+}
+
+.contents{
+  display: flex;
+  flex-direction: column;
+}
+
+.contents > div{
+  background-color: #ffbf00;
+  border: 1px solid gray;
+  margin-top: 5px;
+}
+
+h1{
+  color:aquamarine;
+  text-shadow: black 0.5px 0 0.5px;
+}
+
+h2{
+  background-color: aquamarine;
+}
+
+a:hover{
+  text-decoration: none;
+  color: red;
+}
