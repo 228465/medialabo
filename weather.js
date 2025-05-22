@@ -24,7 +24,23 @@ b.addEventListener('click', print2);
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let d = document.querySelector('div#result');
 
+  let p = document.createElement('p');
+  d.insertAdjacentElement('beforeend', p);
+  p.textContent = data.name;
+
+  p = document.createElement('p');
+  d.insertAdjacentElement('beforeend', p);
+  p.textContent = "天気: " + data.weather[0].description;
+
+  p = document.createElement('p');
+  d.insertAdjacentElement('beforeend', p);
+  p.textContent = "最高気温: " + data.main.temp_max;
+
+  p = document.createElement('p');
+  d.insertAdjacentElement('beforeend', p);
+  p.textContent = "最低気温: " + data.main.temp_min;
 }
 
 // 課題5-1 のイベントハンドラの定義
